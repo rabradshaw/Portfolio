@@ -1,0 +1,168 @@
+/* Name:Rodney Bradshaw
+Class:WEB 287
+Date:2/5/2024
+*/
+
+/* Body*/
+html, body {
+    height: 100%;
+    margin:0;
+    padding:0;
+    background-color: #C4EFDE;
+  }
+main{
+  background-color: #C4EFDE;
+}
+
+  /* Navigation */
+.navbar-brand {
+    font-family: 'Courgette', cursive;
+}
+
+.navbarcolor {
+  background: linear-gradient(-45deg,#015c92,#2d82b5,#010E1F,#000011);
+  background-size: 400% 400%;
+  animation: gradient-animation 15s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.nav-link{
+  color: #FFD43B !important;
+}
+.nav-link:hover{
+  color:#ffffff !important;
+}
+/* Social nav */
+.social{
+  color:white;
+}
+.social:hover {
+transform: scale(1.50) !important;
+color:#FFD43B;
+padding:5px;
+}
+/* Carousel */
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+.carousel-item {
+  height: 32rem;
+}
+.carousel-caption {
+  
+  z-index: 10;
+}
+
+@media (max-width: 766px) {
+  .carousel_img {
+    margin-top: 70px;
+  }
+}
+/* home page background*/
+#back1{
+  background: url(../images/rodney_designs_background.jpg) no-repeat center center fixed;
+
+ }
+ #back2{
+  background: url(../images/background2.jpg) no-repeat center center fixed;
+
+ }
+
+ /*Few of my Works Section*/
+ .card{
+  transition: all 0.3s;
+  }
+  .card:hover{
+  transform: scale(1.05);
+  }
+/* Quote section*/
+hr.solid {
+  border-top: 2px solid #999;
+}
+/* About Page */
+
+.mt-6 {
+  margin-top: 6rem; 
+}
+#blob{
+  background-size: cover;
+  background-position: center center;
+  margin: 20px;
+  padding: 2px;
+  box-shadow: 0 5px 5px 5px rgba(1, 30, 73, 0.6);
+  animation: animat 5s ease-in-out infinite !important ;
+  transition: all 1s ease-in-out !important;
+
+}
+@keyframes animat{
+ 0%, 100% {
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+ }
+ 50% {
+  border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+ }
+}
+svg path {
+  background: linear-gradient(-45deg,#015c92,#2d82b5,#010E1F,#000011);
+  background-size: 400% 400%;
+  animation: gradient-blob 15s ease infinite;
+}
+/* about - skills area*/
+.progress{
+  min-height: 35px !important;
+  background: white !important;
+}
+
+/* Portfolio */
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+svg {
+	font-family: "Russo One", sans-serif;
+	
+}
+svg text {
+	animation: stroke 5s infinite alternate;
+	stroke-width: 2;
+	stroke: #FFD43B;
+	font-size: 50px;
+}
+
+
+@keyframes stroke {
+	0%   {
+		fill: rgba(255,255,255,0.7); stroke: rgba(255,212,59,1);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(255,255,255,0.7); stroke: rgba(255,212,59,1); }
+	80%  {fill: rgba(255,255,255,0.7); stroke: rgba(255,212,59,1); stroke-width: 3; }
+	100% {
+		fill: #000011; stroke: rgba(255,212,59,0);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+
+
+/* Footer area*/
+footer{
+  background-color: #FFD43B;
+  color: #000011 !important;
+}
+footer a {
+  color: #000011;
+
+}
+.footer-social:hover{
+  color:white;
+}
