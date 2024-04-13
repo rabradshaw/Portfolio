@@ -10,40 +10,47 @@
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link  rel="stylesheet" href="css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <title>Rodney Bradshaw - Home</title>
 </head>
 <body>
-  <div>
+ 
     <header >
       
       <nav class="navbar navbar-expand-lg navbar-dark navbarcolor fixed-top mb-5" > 
         <div class="container px-1">
-            <img class=" img-fluid" src="images/logo.png" alt="rodney bradshaw designs logo">
-            <a class="navbar-brand fs-2 " href="index.html">Rodney Bradshaw</a>
+            <img class="img-fluid" src="images/logo.png" alt="rodney bradshaw designs logo, a deep blue filled circle with a yellow R inside the center">
+            <a class="navbar-brand fs-2 fstyle" href="index.html">Rodney Bradshaw</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>	
             <div class="collapse navbar-collapse " id="navbarResponsive">
-                <ul class="navbar-nav ms-auto">
+              <img class="img-fluid d-xs-block d-sm-block d-md-block d-lg-none float-end" id="spin" src="images/rodney_designs.png" alt="rodney bradshaw designs logo, a deep blue filled circle with a yellow R inside the center">
+                <ul class="navbar-nav ms-auto fs-lg-4">
                     <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa-solid fa-house"></i>&nbsp;Home </a></li>
                     <li class="nav-item"><a class="nav-link"  href="about.html"><i class="fa-solid fa-user"></i>&nbsp;About</a></li>
                     <li class="nav-item"><a class="nav-link"  href="portfolio.html"><i class="fa-solid fa-briefcase"></i>&nbsp;Portfolio</a></li>  
                     <li class="nav-item"><a class="nav-link"  href="services.html"><i class="fa-solid fa-screwdriver-wrench"></i>&nbsp;Services</a></li>                      
                     <li class="nav-item"><a class="nav-link"  href="contact.html"><i class="fa-solid fa-address-card"></i>&nbsp;Contact</a></li>
-                    <div class="d-flex d-lg-inline-flex">
+                    <li>
+                    <ul class="d-flex d-lg-inline-flex">
+                   
                     <li class="nav-item"><a class="float-end-lg"  href="https://www.facebook.com/" target=_blank><i class="p-1 social fa-brands fa-facebook" >&nbsp;</i></a></li>
                     <li class="nav-item"><a class="float-end-lg"  href="https://www.linkedin.com/in/rodney-bradshaw-0447b52ab" target=_blank><i class="p-1 social fa-brands fa-linkedin " >&nbsp;</i></a></li>
                     <li class="nav-item"><a class="float-end-lg "  href="https://github.com/rabradshaw" target=_blank><i class=" p-1 social fa-brands fa-github " >&nbsp;</i></a></li>  
-                    <li class="nav-item"><a class="float-end-lg p"  href="https://www.instagram.com" target=_blank><i class=" social fa-brands fa-instagram" >&nbsp;</i></a></li></div> 
+                    <li class="nav-item"><a class="float-end-lg p"  href="https://www.instagram.com" target=_blank><i class=" social fa-brands fa-instagram" >&nbsp;</i></a></li>
+                  
+                    </ul></li>
                 </ul>
             </div>
         </div>
       </nav>
     </header>
 <main>
-    <div id="myCarousel " class="carousel slide" data-bs-ride="carousel">
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -51,7 +58,7 @@
         </div>
         <div class="carousel-inner ">
           <div class="carousel-item active">
-            <img class="img-fluid  carousel_img" src="images/web_developent_mebane_nc.jpg" alt="web_developent_mebane_nc">
+            <img class="img-fluid  carousel_img position-absolute top-50 start-50 translate-middle mt-2 mt-lg-5" src="images/web_developent_mebane_nc.jpg" alt="web developent mebane nc">
     
             <div class="container ">
               <div class="carousel-caption   text-dark">
@@ -62,7 +69,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img class="img-fluid  carousel_img" src="images/SEO_Marketing_mebane_NC.jpg" alt="SEO_Marketing_mebane_NC">
+            <img class="img-fluid  carousel_img  position-absolute top-50 start-50 translate-middle mt-2 mt-lg-5" src="images/SEO_Marketing_mebane_NC.jpg" alt="SEO Marketing mebane NC">
     
             <div class="container">
               <div class="carousel-caption  text-dark">
@@ -73,7 +80,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img class="img-fluid  carousel_img" src="images/E_Commerce_mebane_nc.jpg" alt="E_Commerce_mebane_nc">
+            <img class="img-fluid  carousel_img position-absolute top-50 start-50 translate-middle mt-2 mt-lg-5" src="images/E_Commerce_mebane_nc.jpg" alt="E Commerce mebane nc">
     
             <div class="container">
               <div class="carousel-caption  text-dark">
@@ -95,18 +102,114 @@
       </div>
 
           
-<!--The Introduction -->
+<!--The Introduction --><hr class="border border-primary border-3 my-0 opacity-75"> 
     <div class="row py-lg-2 text-center" id="back1">
         <div class="col-lg-6 col-md-8 mx-auto">
-          <h1 class="fw-light logoyellow fstyle">Rodney Bradshaw's Portfolio</h1>
+          <h1 class="roboto-light ">Rodney Bradshaw's Portfolio</h1>
           <p class="lead text-muted">A Web Developer for small businesses, bringing fresh new ideas like springtime. A qualified Accountant who brings an understanding of business analytics and applies it to Web Designs in Cary, North Carolina.</p>
         </div>
-      </div> 
+      </div><hr class="border border-primary border-3 mt-0 opacity-75"> 
+<!--Testimonials-->
+<section>
+  <div class="row d-flex justify-content-center mt-2">
+    <div class="col-md-10 col-xl-8 text-center">
+      <h1 class="mb-4 roboto-light">Testimonials</h1>
+      <p class="mb-4 pb-2 mb-md-5 pb-md-0 fw-semibold">
+        Discover what clients have to say about my web development services. Explore testimonials showcasing my commitment to excellence, meticulous attention to detail, and innovative solutions.
+      </p>
+    </div>
+  </div>
+
+  <div class="row text-center">
+    <div class="col-md-4 mb-5 mb-md-0">
+      <div class="d-flex justify-content-center mb-4">
+        <img src="images/george-milton.jpg" class="rounded-circle shadow-1-strong" width="150" height="150" alt="Davrell Murray">
+      </div>
+      <h5 class="mb-3">Davrell Murray</h5>
+      <h6 class="text-primary mb-3">Tech Guide - TechieNow</h6>
+      <p class="px-xl-3">
+        <i class="fas fa-quote-left pe-2"></i>I was thoroughly impressed with the logo design service provided. The work was executed with great professionalism, and the result exceeded my expectations. Highly recommend for anyone seeking top-notch design expertise!
+      </p>
+      <ul class="list-unstyled d-flex justify-content-center mb-0">
+        <li>
+          <i class="fas fa-star fa-sm text-warning"></i>
+        </li>
+        <li>
+          <i class="fas fa-star fa-sm text-warning"></i>
+        </li>
+        <li>
+          <i class="fas fa-star fa-sm text-warning"></i>
+        </li>
+        <li>
+          <i class="fas fa-star fa-sm text-warning"></i>
+        </li>
+        <li>
+          <i class="fas fa-star-half-alt fa-sm text-warning"></i>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-4 mb-5 mb-md-0">
+      <div class="d-flex justify-content-center mb-4">
+        <img src="images/anna-nekrashevich.jpg" class="rounded-circle shadow-1-strong" width="150" height="150" alt="Rebecca Ash">
+      </div>
+      <h5 class="mb-3">Rebecca Ash</h5>
+      <h6 class="text-primary mb-3">Owner - ABC Realestate Services</h6>
+      <p class="px-xl-3">
+        <i class="fas fa-quote-left pe-2"></i>Rodney Bradshaw is an exceptional web developer known for his meticulous attention to detail and design finesse. He's instrumental in establishing visual identity and enhancing online presence, with innovative integration of social media platforms and dynamic website features.
+      </p>
+      <ul class="list-unstyled d-flex justify-content-center mb-0">
+        <li>
+          <i class="fas fa-star fa-sm text-warning"></i>
+        </li>
+        <li>
+          <i class="fas fa-star fa-sm text-warning"></i>
+        </li>
+        <li>
+          <i class="fas fa-star fa-sm text-warning"></i>
+        </li>
+        <li>
+          <i class="fas fa-star fa-sm text-warning"></i>
+        </li>
+        <li>
+          <i class="fas fa-star fa-sm text-warning"></i>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-4 mb-0">
+      <div class="d-flex justify-content-center mb-4">
+        <img src="images/kampus-production.jpg" class="rounded-circle shadow-1-strong" width="150" height="150" alt="Augustin Ledger">
+      </div>
+      <h5 class="mb-3">Augustin Ledger</h5>
+      <h6 class="text-primary mb-3">Owner - ASL Realestate Agency</h6>
+      <p class="px-xl-3">
+        <i class="fas fa-quote-left pe-2"></i>Working closely with Rodney Bradshaw from 2012 to 2016, I witnessed his exceptional talent firsthand. Rodney led the complete reconstruction of our website, ensuring a seamless integration of our branding and a user-friendly design. His meticulous attention to detail and dedication to optimizing the user experience resulted in a website that truly enhanced our brand visibility and engagement. I highly recommend Rodney for his expertise in web development and commitment to delivering outstanding results.
+      </p>
+      <ul class="list-unstyled d-flex justify-content-center mb-0">
+        <li>
+          <i class="fas fa-star fa-sm text-warning"></i>
+        </li>
+        <li>
+          <i class="fas fa-star fa-sm text-warning"></i>
+        </li>
+        <li>
+          <i class="fas fa-star fa-sm text-warning"></i>
+        </li>
+        <li>
+          <i class="fas fa-star fa-sm text-warning"></i>
+        </li>
+        <li>
+          <i class="fas fa-star fa-sm text-warning"></i>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section><hr class="border border-primary border-3 opacity-75">
+
       <!--The works -->
     <div class="py-2 container ">
       <div class="py-2 " id="back3">
         <div class=" row justify-content-center">
-          <h1 class=" text-center">Few Of My Works</h1>
+          <h1 class="roboto-light text-center">Few Of My Works</h1>
           <div class="album py-2 bg-light">
             <div class="container shadow">
         
@@ -128,7 +231,7 @@
                 </div>
                 <div class="col">
                   <div class="card shadow-sm">
-                    <img class="img-fluid" src="images/ASP.NET MVC CORE Project.jpg" alt="asp.net mvc core site by rodney bradshaw">   
+                    <img class="img-fluid" src="images/ASP_NET_MVC_CORE_Project.jpg" alt="asp net mvc core site by rodney bradshaw">   
                   </div>
                 </div>
     
@@ -182,34 +285,31 @@
 
       </div>
 <!--The Services -->
-          <div >
-          <h1 class=" text-center">Services</h1>
-          <div class=" row justify-content-center">        
-             <div class="py-2 m-2 col col-12 col-sm-6 col-md-3 bg-secondary">
-              <div class="text-center"><i class="fa-solid fa-laptop-code fa-lg"></i></div>
-                  <h5 class="text-info text-center">Web Development</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
-                  <div class="text-center"><a href="services.html" class="btn btn-primary text-info text-center">Read More</a></div>
-              </div>
-              <div class="py-2 m-2 col  col-12 col-sm-6 col-md-3 bg-secondary  ">
-                <div class="text-center"><i class="fa-solid fa-location-crosshairs fa-lg "></i></div>
-                  <h5 class="text-info text-center">SEO Marketing</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
-                  <div class="text-center"><a href="services.html" class="btn btn-primary text-info text-center">Read More</a></div>
-                  
-              </div>
-              <div class="py-2 m-2 col col-12 col-sm-6 col-md-3 bg-secondary ">
-                <div class="text-center"><i class="fa-solid fa-cart-shopping fa-lg"></i></div>
-                  <h5 class="text-info text-center">E-Commerce</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
-                      <div class="text-center"><a href="services.html" class="btn btn-primary text-info text-center">Read More</a></div>
-              </div>
+<div >
+  <h1 class="text-center roboto-light">Services</h1>
+  <div class=" row justify-content-center">        
+     <div class="py-2 m-2 col col-12 col-sm-6 col-md-3 mycolor1 rounded-top ">
+      <div class="text-center"><i class="text-white fa-solid fa-laptop-code fa-lg"></i></div>
+          <h5 class="text-white text-center">Web Development</h5>
+          <p class="mycolor">New website needed? Need redesign website? I am web developer in Cary, NC. Let's work together and bring your ideas to a reality. </p>
+          <div class="text-center"><a href="services.html" class="btn btn-primary buttoncolor text-center">Read More</a></div>
+      </div>
+      <div class="py-2 m-2 col  col-12 col-sm-6 col-md-3 mycolor1 rounded-top">
+        <div class="text-center"><i class="text-white fa-solid fa-location-crosshairs fa-lg "></i></div>
+          <h5 class="text-white text-center">SEO Marketing</h5>
+          <p class="mycolor">You have a site, but not getting much visitors. I can help you! Making your site more Search Engine Friendly. Revise all your images and content helping others to find you. </p>
+          <div class="text-center"><a href="services.html" class="btn btn-primary buttoncolor text-center">Read More</a></div>
+          
+      </div>
+      <div class="py-2 m-2 col col-12 col-sm-6 col-md-3 mycolor1 rounded-top">
+        <div class="text-center"><i class="text-white fa-solid fa-cart-shopping fa-lg"></i></div>
+          <h5 class="text-white text-center">E-Commerce</h5>
+          <p class=" mycolor">Getting your small business online is an important step. Let us work together get your online store started and see your business grow. </p>
+              <div class="text-center"><a href="services.html" class="btn btn-primary buttoncolor text-center">Read More</a></div>
+      </div>
 
-            </div>
-        </div>
+    </div>
+</div>
 </main>
 
 
@@ -217,29 +317,29 @@
   <footer class="footer-bs footer-color">
     <div class="container-fluid row  row-cols-md-3 pt-2" >
       <div class="row-cols-1 text-center fs-1 align-center">
-        <a href="https://www.facebook.com/" target=_blank><i class="footer-social fa-brands fa-facebook pagination-lg "></i></a>
-        <a  href="https://www.linkedin.com/in/rodney-bradshaw-0447b52ab" target=_blank><i class="footer-social fa-brands fa-linkedin "></i></a>
-        <a  href="https://github.com/rabradshaw" target=_blank><i class="footer-social fa-brands fa-github" ></i></a>
-        <a href="https://www.instagram.com" target=_blank><i class="footer-social fa-brands fa-instagram "></i></a>
+        <a href="https://www.facebook.com/" target=_blank><i class="footer-social fa-brands fa-facebook pagination-lg" aria-label="Reach me on Facebook"></i></a>
+        <a  href="https://www.linkedin.com/in/rodney-bradshaw-0447b52ab" target=_blank><i class="footer-social fa-brands fa-linkedin" aria-label="Reach me on linkedin"></i></a>
+        <a  href="https://github.com/rabradshaw" target=_blank><i class="footer-social fa-brands fa-github" aria-label="Reach me on github"></i></a>
+        <a href="https://www.instagram.com" target=_blank><i class="footer-social fa-brands fa-instagram" aria-label="Reach me on instagram"></i></a>
               <div class="text-center" >
-              <a href="index.html"><img class="img-fluid" src="images/logo.png" alt="rodney designs logo"></a></div>
+              <a href="index.html"><img class="img-fluid mb-1" src="images/logo.png" alt="rodney designs logo"></a></div>
       </div>
       <hr class="featurette-divider d-md-none d-lg-none d-xl-none">
   
       <div class="row-cols-1 text-center">
         <p><i class="fa-regular fa-copyright fa-xs"></i> <script>document.write( new Date().getUTCFullYear() );</script> Rodney Bradshaw Designs.</p>
         <p>102 Madison Ave | Cary, NC 27513</p>
-        <p><a class=" text-decoration-none"  href="rodney.us.to" target=_blank>Designed by Rodney Bradshaw</a></p>
+        <div class="mb-1"><a href="https://rodneywebblog.wordpress.com/blog/" target="_blank" class=" btn btn-md btn-outline-primary ">Visit My Blog</a></div>
       </div>
       <hr class="featurette-divider d-md-none d-lg-none d-xl-none">
       
-
+  
       <div class="row-cols-1 text-center" >
         <h4>Let's Start A Design:</h4>
-          <p><i class="bi bi-envelope-at"></i><a class=" text-decoration-none" href="mailto:contact@rodneydesigns.com">contact@rodneydesigns.com</a></p>
-          <p><i class="bi bi-telephone"></i><a class=" text-decoration-none" href="tel:9105555555">(910) 555-5555</a></p>
-          <p><a class=" text-decoration-none" href="about.html">More Ways To Get In Touch...</a></p>
-        
+          <p><i class="bi bi-envelope-at"></i><a class=" text-decoration-none" href="mailto:info@rodneydesigns.yn.lu" aria-label="send me an email">info@rodneydesigns.yn.lu</a></p>
+          <p><i class="bi bi-telephone"></i><a class=" text-decoration-none" aria-label="call me" href="tel:3255106034">(325) 510-6034</a></p>
+          <p><a class=" text-decoration-none" href="about.html" aria-label="link to my about page">More Ways To Get In Touch...</a></p>
+          
       </div>
   
     </div>

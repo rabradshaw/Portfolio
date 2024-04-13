@@ -14,29 +14,33 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    
-    <title>Rodney Bradshaw = Contact</title>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+    <title>Rodney Bradshaw - Contact</title>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark navbarcolor fixed-top mb-5" > 
             <div class="container px-1">
-                <img class=" img-fluid" src="images/logo.png" alt="rodney bradshaw designs logo">
+                <img class="img-fluid" src="images/logo.png" alt="rodney bradshaw designs logo, a deep blue filled circle with a yellow R inside the center">
                 <a class="navbar-brand fs-2 fstyle" href="index.html">Rodney Bradshaw</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>	
                 <div class="collapse navbar-collapse " id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
+                  <img class="img-fluid d-xs-block d-sm-block d-md-block d-lg-none float-end" id="spin" src="images/rodney_designs.png" alt="rodney bradshaw designs logo, a deep blue filled circle with a yellow R inside the center">
+                    <ul class="navbar-nav ms-auto fs-lg-4">
                         <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa-solid fa-house"></i>&nbsp;Home </a></li>
                         <li class="nav-item"><a class="nav-link"  href="about.html"><i class="fa-solid fa-user"></i>&nbsp;About</a></li>
                         <li class="nav-item"><a class="nav-link"  href="portfolio.html"><i class="fa-solid fa-briefcase"></i>&nbsp;Portfolio</a></li>  
                         <li class="nav-item"><a class="nav-link"  href="services.html"><i class="fa-solid fa-screwdriver-wrench"></i>&nbsp;Services</a></li>                      
                         <li class="nav-item"><a class="nav-link"  href="contact.html"><i class="fa-solid fa-address-card"></i>&nbsp;Contact</a></li>
-                        <div class="d-flex d-lg-inline-flex">
+                        <li>
+                        <ul class="d-flex d-lg-inline-flex">
+                       
                         <li class="nav-item"><a class="float-end-lg"  href="https://www.facebook.com/" target=_blank><i class="p-1 social fa-brands fa-facebook" >&nbsp;</i></a></li>
                         <li class="nav-item"><a class="float-end-lg"  href="https://www.linkedin.com/in/rodney-bradshaw-0447b52ab" target=_blank><i class="p-1 social fa-brands fa-linkedin " >&nbsp;</i></a></li>
                         <li class="nav-item"><a class="float-end-lg "  href="https://github.com/rabradshaw" target=_blank><i class=" p-1 social fa-brands fa-github " >&nbsp;</i></a></li>  
-                        <li class="nav-item"><a class="float-end-lg p"  href="https://www.instagram.com" target=_blank><i class=" social fa-brands fa-instagram" >&nbsp;</i></a></li></div>
+                        <li class="nav-item"><a class="float-end-lg p"  href="https://www.instagram.com" target=_blank><i class=" social fa-brands fa-instagram" >&nbsp;</i></a></li>
                       
+                        </ul></li>
                     </ul>
                 </div>
             </div>
@@ -61,47 +65,50 @@
         <div class="row row-cols-md-2 ">
           <div class="row-cols-1  py-4 ">
 
-                    <!-- Bootstrap 5 starter form -->
-                <form id="contactForm" class="ms-2" >
-                
-                    <!-- Name input -->
-                    <div class="mb-3">
+                    <!-- Bootstrap 5 form -->
+                <form method="POST" id="form" class="ms-2" >
+
+                    <input type="hidden" name="apikey" value="6a6344d7-6420-4e72-a9f4-c0c343d03d6b">
+                      <!-- Name input -->
+                      <div class="mb-3">
                         <label class="form-label" for="name">Name</label>
-                        <input class="form-control" id="name" type="text" placeholder="Name" />
+                        <input class="form-control" id="name" type="text" name="name" placeholder="Name" required>
                     </div>
                 
                     <!-- Email address input -->
                     <div class="mb-3">
                         <label class="form-label" for="emailAddress">Email Address</label>
-                        <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" />
+                        <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" name="email" required>
                     </div>
                 
                     <!-- Message input -->
                     <div class="mb-3">
                         <label class="form-label" for="message">Message</label>
-                        <textarea class="form-control" id="message"  placeholder="Message" style="height: 10rem;"></textarea>
+                        <textarea class="form-control" id="message"  placeholder="Message" style="height: 10rem;" name="message" required></textarea>
                     </div>
-                
+                    <!-- Captcha area -->
+                    <div class="h-captcha" data-captcha="true"></div>
                     <!-- Form submit button -->
                     <div class="d-flex justify-content-center py-5">
-                        <button class="btn btn-primary btn-md d-inline-flex align-items-center" type="submit">Submit</button>
-                    </div>
-                
+                        <button class="btn btn-primary btn-md d-inline-flex align-items-center" type="submit">Submit Form</button>
+                    </div>              
+
+                    <div id="result"></div>
                 </form>
          </div>
             <div class="row-cols-1 mt-5 justify-content-center">
-                <h2>Address:</h2>
-                <ul class="list-unstyled mb-0 ms-2">
+                <h2>Ways to Get in Touch:</h2>
+                <ul class="list-unstyled mb-0 ms-2 mt-4">
                     <li>
                         <p><i class="fa-solid fa-house mr-2"></i>102 Madison Ave, Cary, NC 27513</p>
                     </li>
-    
+                
                     <li>
-                        <p><i class="fa-regular fa-envelope"></i><a class="link-dark text-decoration-none px-2" href="mailto:contact@rodneydesigns.com">info@rodneydesigns.com</a></p>
+                        <p><i class="fa-regular fa-envelope"></i><a class="link-dark text-decoration-none px-2" href="mailto:info@rodneydesigns.yn.lu">info@rodneydesigns.yn.lu</a></p>
                     </li>
     
                     <li>
-                        <p><i class="fa-solid fa-phone"></i><a class="link-dark text-decoration-none px-2" href="tel:9101115555">(910) 555-5555</a></p>
+                        <p><i class="fa-solid fa-phone"></i><a class="link-dark text-decoration-none px-2" href="tel:3255106034">(325) 510-6034</a></p>
                     </li>
                     <li>
                         <p><i class="fa-solid fa-globe"></i><a class="link-dark text-decoration-none px-2" href="http://rodney.us.to/" target="_blank">www.rodney.us.to</a></p>
@@ -116,9 +123,49 @@
         </div>
     </div>
     </div>
-           
-    </main>
+ <!-- Javascrip for form -->   
+    <script>
+    const form = document.getElementById('form');
+    const result = document.getElementById('result');
+    
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const formData = new FormData(form);
+      const object = Object.fromEntries(formData);
+      const json = JSON.stringify(object);
+      result.innerHTML = "Please wait..."
+    
+        fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: json
+            })
+            .then(async (response) => {
+                let json = await response.json();
+                if (response.status == 200) {
+                    result.innerHTML = "Form submitted successfully!!";
+                } else {
+                    console.log(response);
+                    result.innerHTML = json.message;
+                }
+            })
+            .catch(error => {
+                console.log(error);
+                result.innerHTML = "Something went wrong!";
+            })
+            .then(function() {
+                form.reset();
+                setTimeout(() => {
+                    result.style.display = "none";
+                }, 3000);
+            });
+    });
+    </script>   
 
+    </main>
 
 
 </div>
@@ -126,29 +173,29 @@
     <footer class="footer-bs footer-color">
         <div class="container-fluid row  row-cols-md-3 pt-2" >
           <div class="row-cols-1 text-center fs-1 align-center">
-            <a href="https://www.facebook.com/" target=_blank><i class="footer-social fa-brands fa-facebook pagination-lg "></i></a>
-            <a  href="https://www.linkedin.com/in/rodney-bradshaw-0447b52ab" target=_blank><i class="footer-social fa-brands fa-linkedin "></i></a>
-            <a  href="https://github.com/rabradshaw" target=_blank><i class="footer-social fa-brands fa-github" ></i></a>
-            <a href="https://www.instagram.com" target=_blank><i class="footer-social fa-brands fa-instagram "></i></a>
+            <a href="https://www.facebook.com/" target=_blank><i class="footer-social fa-brands fa-facebook pagination-lg" aria-label="Reach me on Facebook"></i></a>
+            <a  href="https://www.linkedin.com/in/rodney-bradshaw-0447b52ab" target=_blank><i class="footer-social fa-brands fa-linkedin" aria-label="Reach me on linkedin"></i></a>
+            <a  href="https://github.com/rabradshaw" target=_blank><i class="footer-social fa-brands fa-github" aria-label="Reach me on github"></i></a>
+            <a href="https://www.instagram.com" target=_blank><i class="footer-social fa-brands fa-instagram" aria-label="Reach me on instagram"></i></a>
                   <div class="text-center" >
-                  <a href="index.html"><img class="img-fluid" src="images/logo.png" alt="rodney designs logo"></a></div>
+                  <a href="index.html"><img class="img-fluid mb-1" src="images/logo.png" alt="rodney designs logo"></a></div>
           </div>
           <hr class="featurette-divider d-md-none d-lg-none d-xl-none">
       
           <div class="row-cols-1 text-center">
             <p><i class="fa-regular fa-copyright fa-xs"></i> <script>document.write( new Date().getUTCFullYear() );</script> Rodney Bradshaw Designs.</p>
             <p>102 Madison Ave | Cary, NC 27513</p>
-            <p><a class=" text-decoration-none"  href="rodney.us.to" target=_blank>Designed by Rodney Bradshaw</a></p>
+            <div class="mb-1"><a href="https://rodneywebblog.wordpress.com/blog/" target="_blank" class=" btn btn-md btn-outline-primary ">Visit My Blog</a></div>
           </div>
           <hr class="featurette-divider d-md-none d-lg-none d-xl-none">
           
-    
+      
           <div class="row-cols-1 text-center" >
             <h4>Let's Start A Design:</h4>
-              <p><i class="bi bi-envelope-at"></i><a class=" text-decoration-none" href="mailto:contact@rodneydesigns.com">contact@rodneydesigns.com</a></p>
-              <p><i class="bi bi-telephone"></i><a class=" text-decoration-none" href="tel:9105555555">(910) 555-5555</a></p>
-              <p><a class=" text-decoration-none" href="about.html">More Ways To Get In Touch...</a></p>
-            
+              <p><i class="bi bi-envelope-at"></i><a class=" text-decoration-none" href="mailto:info@rodneydesigns.yn.lu" aria-label="send me an email">info@rodneydesigns.yn.lu</a></p>
+              <p><i class="bi bi-telephone"></i><a class=" text-decoration-none" aria-label="call me" href="tel:3255106034">(325) 510-6034</a></p>
+              <p><a class=" text-decoration-none" href="about.html" aria-label="link to my about page">More Ways To Get In Touch...</a></p>
+              
           </div>
       
         </div>
