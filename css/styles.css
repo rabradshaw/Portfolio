@@ -2,7 +2,11 @@
 Class:WEB 287
 Date:2/5/2024
 */
-
+/* imports*/
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+svg {
+	font-family: "Russo One", sans-serif;
+}
 /* Body*/
 html, body {
     height: 100%;
@@ -19,14 +23,11 @@ main{
 .navbar-brand {
     font-family: 'Courgette', cursive;
 }
-
-
 .navbarcolor {
   background: linear-gradient(-45deg,#015c92,#2d82b5,#010E1F,#000011);
   background-size: 400% 400%;
   animation: gradient-animation 15s ease infinite;
 }
-
 @keyframes gradient-animation {
   0% {
     background-position: 0% 50%;
@@ -61,13 +62,11 @@ padding:5px;
   #spin {
     display: none !important;
   }
-
 }
 #spin{
   border: 2px solid #FFD43B !important;
   border-radius: 50% !important;
 	animation: rotateAnimation 5s linear infinite !important;
- 
 }
 @keyframes rotateAnimation {
   from {transform: rotateY(0deg) ;}
@@ -79,7 +78,6 @@ padding:5px;
     background: rgba(0, 0, 0, 0.2);
   border-radius: 20px;
 }
-
 .carousel-item {
   height: 32rem;
 }
@@ -87,12 +85,24 @@ padding:5px;
   
   z-index: 10;
 }
-
 @media (max-width: 766px) {
   .carousel_img {
     margin-top: 70px !important;
   }
-
+}
+@media (max-width: 437px) {
+  .carousel_img {
+    margin-top: 0px !important;
+  }
+  #myCarousel{
+    margin-top: -50px;
+  }
+  .carousel-item {
+    height: 35rem;
+  }
+  .fs-xs{
+    font-size: 22px;
+  }
 }
 @media (min-width: 1400px) {
   .fs-lg-4 {
@@ -101,19 +111,15 @@ padding:5px;
   .mt-lg-5{
     margin-top: 5rem !important;
   }
-
 }
 
 /* home page background*/
 #back1{
   background: url(../images/rodney_designs_background.jpg) no-repeat center center fixed;
-
  }
  #back2{
   background: url(../images/background2.jpg) no-repeat center center fixed;
-
  }
-
 
  /*Few of my Works Section*/
  .card{
@@ -132,9 +138,7 @@ hr.solid {
   font-weight: 300;
   font-style: normal;
 }
-
 /* About Page */
-
 .mt-6 {
   margin-top: 6rem; 
 }
@@ -146,7 +150,6 @@ hr.solid {
   box-shadow: 0 5px 5px 5px rgba(1, 30, 73, 0.6);
   animation: animat 5s ease-in-out infinite !important ;
   transition: all 1s ease-in-out !important;
-
 }
 @keyframes animat{
  0%, 100% {
@@ -166,13 +169,10 @@ svg path {
   min-height: 35px !important;
   background: white !important;
 }
-
 /* Portfolio */
-@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
 
 svg {
 	font-family: "Russo One", sans-serif;
-	
 }
 svg text {
 	animation: stroke 5s infinite alternate;
@@ -180,8 +180,6 @@ svg text {
 	stroke: #FFD43B;
 	font-size: 50px;
 }
-
-
 @keyframes stroke {
 	0%   {
 		fill: rgba(255,255,255,0.1); stroke: rgba(255,212,59,1);
@@ -194,8 +192,6 @@ svg text {
 		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
 	}
 }
-
-
 /* Footer area*/
 footer{
   background-color: #FFD43B;
@@ -203,7 +199,6 @@ footer{
 }
 footer a {
   color: #000011;
-
 }
 .footer-social:hover{
   color:white;
