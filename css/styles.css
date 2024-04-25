@@ -1,7 +1,6 @@
 /* Name:Rodney Bradshaw
 Class:WEB 287
-Date:2/5/2024
-*/
+Date:2/5/2024*/
 /* imports*/
 @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
 svg {
@@ -18,7 +17,6 @@ html, body {
 main{
   background-color: #C4EFDE;
 }
-
   /* Navigation */
 .navbar-brand {
     font-family: 'Courgette', cursive;
@@ -60,8 +58,7 @@ padding:5px;
 /* hidden nav image animation */
 @media (max-width: 339px) {
   #spin {
-    display: none !important;
-  }
+    display: none !important;}
 }
 #spin{
   border: 2px solid #FFD43B !important;
@@ -72,7 +69,6 @@ padding:5px;
   from {transform: rotateY(0deg) ;}
 	to {transform: rotateY(360deg) ;}
 }
-
 /* Carousel */
 .carousel-caption {
     background: rgba(0, 0, 0, 0.2);
@@ -82,7 +78,6 @@ padding:5px;
   height: 32rem;
 }
 .carousel-caption {
-  
   z-index: 10;
 }
 @media (max-width: 766px) {
@@ -112,15 +107,15 @@ padding:5px;
     margin-top: 5rem !important;
   }
 }
-
 /* home page background*/
+/*  from unsplash.com :green tree under blue sky during daytime by J Lee */
 #back1{
   background: url(../images/rodney_designs_background.jpg) no-repeat center center fixed;
  }
+ /* Quote section *//* image by unsplash.com */
  #back2{
   background: url(../images/background2.jpg) no-repeat center center fixed;
  }
-
  /*Few of my Works Section*/
  .card{
   transition: all 0.3s;
@@ -170,7 +165,6 @@ svg path {
   background: white !important;
 }
 /* Portfolio */
-
 svg {
 	font-family: "Russo One", sans-serif;
 }
